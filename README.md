@@ -1,43 +1,10 @@
-# 📄 Kaya - Document-Aware GenAI Assistant
+# Document-Aware GenAI Assistant
 
-Kaya is a local, document-aware GenAI assistant built with **Streamlit**, **LangChain**, **Together AI**, and **FAISS**. Upload PDF/TXT files, generate summaries, ask contextual questions, or challenge yourself with AI-generated quizzes based on the document content.
+## Setup Instructions
 
----
-
-## 🚀 Features
-
-- ✅ Upload and read **PDF** or **TXT** documents
-- ✅ Generate a **summary** using LLMs
-- ✅ Create a **vector store** using `FAISS`
-- ✅ Perform **semantic search** and **Q&A**
-- ✅ Test yourself with **auto-generated questions**
-- ✅ Evaluate your answers with **AI feedback**
-
----
-
-## 🛠️ Tech Stack
-
-- [Python 3.8+](https://www.python.org/)
-- [Streamlit](https://streamlit.io/)
-- [LangChain](https://github.com/langchain-ai/langchain)
-- [Together API](https://together.xyz/)
-- [FAISS](https://github.com/facebookresearch/faiss)
-- [PyMuPDF (`fitz`)](https://github.com/pymupdf/PyMuPDF)
-- `.env` config via `python-dotenv`
-
----
-
-## 📦 Installation
-
-```bash
-git clone https://github.com/your-username/kaya.git
-cd kaya
-
-python -m venv venv
-# Activate the virtual environment:
-# Windows
-venv\Scripts\activate
-# Mac/Linux
-source venv/bin/activate
-
-pip install -r requirements.txt
+1. Clone the repo
+2. Create and activate a Python virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # Linux/macOS
+   venv\Scripts\activate      # Windows
