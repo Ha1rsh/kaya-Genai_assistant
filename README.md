@@ -42,8 +42,8 @@ kaya/
 ├── backend/ # FastAPI logic: summarization, QA, evaluation
 │ └── main.py 
 │ └── genai_logic.py
-| └── document_utils.py
-|
+│ └── document_utils.py
+│
 ├── frontend/ # Streamlit app UI
 │ ├── app.py
 │ └── assets/
