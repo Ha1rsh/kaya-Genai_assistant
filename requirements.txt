@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+streamlit
+pdfplumber
+python-multipart
+together
+nltk
+pymupdf
+fpdf2
