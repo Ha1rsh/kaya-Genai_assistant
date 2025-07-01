@@ -1,17 +1,16 @@
-# 📄 Kaya - Document-Aware GenAI Assistant
+# Kaya: GenAI Assistant 🤖📄
 
-Kaya is a local, document-aware GenAI assistant built with **Streamlit**, **LangChain**, **Together AI**, and **FAISS**. Upload PDF/TXT files, generate summaries, ask contextual questions, or challenge yourself with AI-generated quizzes based on the document content.
-
+Kaya is an AI-powered document-aware assistant that can **summarize**, **answer questions**, and **generate logic-based challenges** from any uploaded PDF or TXT document. Built using Streamlit and FastAPI, Kaya helps you interact with research material in a smart, intuitive way.
 ---
 
 ## 🚀 Features
 
-- ✅ Upload and read **PDF** or **TXT** documents
-- ✅ Generate a **summary** using LLMs
-- ✅ Create a **vector store** using `FAISS`
-- ✅ Perform **semantic search** and **Q&A**
-- ✅ Test yourself with **auto-generated questions**
-- ✅ Evaluate your answers with **AI feedback**
+- 📥 Upload `.pdf` or `.txt` files  
+- 📌 Get concise summaries (~150 words)  
+- 💬 Ask context-aware questions from the document  
+- 🧠 Challenge yourself with logic-based questions  
+- 📤 Export summary as downloadable PDF  
+- 🖼️ Clean UI with interactive icons and avatars
 
 ---
 
@@ -19,9 +18,7 @@ Kaya is a local, document-aware GenAI assistant built with **Streamlit**, **Lang
 
 - [Python 3.8+](https://www.python.org/)
 - [Streamlit](https://streamlit.io/)
-- [LangChain](https://github.com/langchain-ai/langchain)
 - [Together API](https://together.xyz/)
-- [FAISS](https://github.com/facebookresearch/faiss)
 - [PyMuPDF (`fitz`)](https://github.com/pymupdf/PyMuPDF)
 - `.env` config via `python-dotenv`
 
@@ -42,13 +39,17 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 kaya/
-├── app.py                   # Streamlit app interface
-├── .env                     # API keys (not tracked in Git)
-├── backend/
-│   ├── utils.py             # Text extraction, chunking, vectorstore
-│   ├── summarizer.py        # Summarization logic
-│   ├── qa_engine.py         # Q&A logic
-│   ├── question_generator.py# MCQ generation
-│   └── evaluator.py         # Answer evaluation
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
+├── backend/ # FastAPI logic: summarization, QA, evaluation
+│ └── main.py 
+│ └── genai_logic.py
+| └── document_utils.py
+|
+├── frontend/ # Streamlit app UI
+│ ├── app.py
+│ └── assets/
+│ ├── kaya.png # Kaya avatar
+│ ├── question.png # Ask Anything icon
+│ └── student.png # Challenge Me icon
+│
+├── requirements.txt
+└── README.md
