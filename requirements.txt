@@ -1,9 +1,0 @@
-langchain
-langchain-together
-together
-openai
-streamlit
-faiss-cpu
-pymupdf
-python-dotenv
-
